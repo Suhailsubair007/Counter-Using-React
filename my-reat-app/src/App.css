@@ -1,0 +1,76 @@
+/* Style for the heading */
+
+*{
+    padding: 20PX;
+}
+.heading {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Style for the ordered list */
+  .orderList {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin: 20px 0;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the list items */
+  .sublist {
+    font-size: 1.2rem;
+    color: #34495e;
+    padding: 8px 0;
+    border-bottom: 1px solid #bdc3c7;
+  }
+  
+  .sublist:last-child {
+    border-bottom: none;
+  }
+  
+  .button1 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .button1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .button1:hover span {
+    padding-right: 15px;
+   }
+   
+   .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
